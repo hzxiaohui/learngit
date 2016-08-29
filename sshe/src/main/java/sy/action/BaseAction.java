@@ -11,7 +11,9 @@ import com.alibaba.fastjson.JSON;
 @ParentPackage("basePackage")
 @Namespace("/")
 public class BaseAction {
-
+	/**
+	*写成json格式
+	*/
 	public void writeJson(Object object) {
 		try {
 			String json = JSON.toJSONStringWithDateFormat(object, "yyyy-MM-dd HH:mm:ss");
